@@ -37,7 +37,7 @@ export const Login = () => {
         toast.info('Please change your password before continuing');
       } else {
         toast.success('Login successful');
-        navigate('/dashboard');
+        navigate('/candidate/dashboard');
       }
     } else {
       toast.error(result.error || 'Login failed');
