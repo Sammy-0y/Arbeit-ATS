@@ -761,6 +761,9 @@ def verify_password(plain_password: str, hashed_password: str) -> bool:
 # Phase 4: File storage setup
 BASE_DIR = Path(__file__).resolve().parent
 UPLOAD_DIR.mkdir(parents=True, exist_ok=True)
+BASE_DIR = Path(__file__).resolve().parent
+UPLOAD_DIR = BASE_DIR / "uploads"
+
 
 
 async def save_cv_file(file: UploadFile, candidate_id: str) -> str:
